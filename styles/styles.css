@@ -1,15 +1,13 @@
 
-.bodycol {
-    color: blue;
-    background-color: brown;
+.body {
+    color: black;
+    background-color: white;
 }
 
 .eeee {
     color: blue;
-    background-color: rgb(191, 111, 111);
 }
 
 .uiui {
     color: blue;
-    background-color: rgb(71, 42, 165);
-    }
+}
