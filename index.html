@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,28 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>test-1-проби-тегів</title>
 </head>
+
 <body class="body">
     <div>
         <p class="eeee">hello world!!!!!!!!!!!!</p>
         <h1 class="uiui">uiuiu UUUUUU</h1>
     </div>
 
-    <h1>Пробую та експерементую</h1>
+    <h1 id="home">Пробую та експерементую</h1>
+
+    <!-- Посилання-якір -->
+    <ul>
+        <li><a href="#teg-inside">Теги всередині тегів (списки)</a></li>
+        <li><a href="#link-inside">Посилання на інші ресурси інтернету</a></li>
+        <li><a href="#link-download">Посилання на завантаження файлу</a></li>
+        <li><a href="#tel-1">Посилання на телефонний номер</a></li>
+        <li><a href="#mail-1">Посилання на адресу електронної пошти</a></li>
+        <li><a href="#image-1">Картинки</a></li>
+    </ul>
 
     <!-- Теги всередині тегів (списки) -->
     <div>
-        <h2>Теги всередині тегів (списки)</h2>
+        <h2 id="teg-inside">Теги всередині тегів (списки)</h2>
         <ol>
             <li>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nobis?
@@ -39,33 +51,77 @@
     </div>
     
     <!-- посилання на інші ресурси інтернету -->
-    <h2>Посилання на інші ресурси інтернету</h2>
+    <h2 id="link-inside">Посилання на інші ресурси інтернету</h2>
     <a href="https://youtu.be/WVD5hrC6txc">Лінк на Ютуб в цьому ж вікні</a>;
     <a href="https://youtu.be/WVD5hrC6txc" target="_blank" rel="noreferrer noopener">Лінк на Ютуб в новому вікні</a>
 
     <!-- Посилання на завантаження файлу -->
-    <h2>Посилання на завантаження файлу</h2>
+    <h2 id="link-download">Посилання на завантаження файлу</h2>
     
     <h5>Посилання в рядок</h5>
-    <a href="d:\GitHub\test-1\img\shema_prihoja.jpg" download="Прихожа">Схема (прихожа)</a>
-    <a href="https://klike.net/uploads/posts/2019-05/1556866648_1.jpg" download="Прихожа">Картинка з інтернету</a>
+    <a href="img/shema_prihoja.jpg" download="Прихожа">Схема (прихожа)</a>
+    <a href="https://klike.net/uploads/posts/2019-05/1556866648_1.jpg" download="img-001">Картинка з інтернету</a>
     
     <h5>Посилання в стовпчик</h5>
     <div>
-        <a href="d:\GitHub\test-1\img\shema_prihoja.jpg" download="Прихожа">Схема (прихожа)</a>
+        <a href="img/shema_prihoja.jpg" download="Прихожа">Схема (прихожа)</a>
     </div>
     <div>
-        <a href="https://klike.net/uploads/posts/2019-05/1556866648_1.jpg" download="Прихожа">Картинка з інтернету</a>
+        <a href="https://klike.net/uploads/posts/2019-05/1556866648_1.jpg" download="img-001">Картинка з інтернету</a>
     </div>
 
 <!-- Посилання на телефонний номер -->
-<h2>Посилання на телефонний номер</h2>
-<a href="tel:+380966857237">Телефон Максима</a>
+    <h2 id="tel-1">Посилання на телефонний номер</h2>
+    <a href="tel:+380966857237">Телефон Максима</a>
 
 <!-- Посилання на адресу електронної пошти -->
-<h2>Посилання на адресу електронної пошти</h2>
-<a href="mailto:max.ocheret@gmail.com">Пошта Максима</a>
+    <h2 id="mail-1">Посилання на адресу електронної пошти</h2>
+    <a href="mailto:max.ocheret@gmail.com">Пошта Максима</a>
 
+<!-- Картинки -->
+
+<!-- Вбудована картинка на сторінку -->
+    <p>
+        <div id="image-1">
+            <img 
+            src="img/Наліпки-Renovate-v-2.jpg" 
+            alt="Наліпки Renovate"
+            width="400"
+            >
+        </div>
+    </p>
+
+<!-- Картинка за посиланням -->
+    <a href="https://www.pexels.com/photo/close-up-photography-of-white-and-black-cat-69932/">
+        <img 
+        src="img/tabby-cat-close-up-portrait-69932.jpeg" 
+        alt="Мордочка сірого кота"
+        width="200"
+        >
+    </a>
+
+<!-- Зображення з підписом -->
+    <figure>
+        <img src="img/1556866707_6.jpg" alt="Морда лежачого тигра" width="200">
+        <figcaption>Тигр на відпочинку</figcaption>
+
+        <p>
+            <img src="img/1556866648_1.jpg" alt="Острів в океані" width="200">
+            <figcaption>Хвилі океану на фоні острову</figcaption>
+        </p>
+            <figcaption>Асфальтні гори</figcaption>
+            <img src="img/1556866690_2.jpg" alt="дорога серед гір">
+
+
+    </figure>
+
+
+
+
+
+<section>
+    <a href="#home">На початок</a>
+</section>
 
 </body>
 </html>
